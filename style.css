@@ -15,7 +15,7 @@ main {
 .glass {
   background: white;
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
-  backdrop-filter: blur(2rem);
+  backdrop-filter: blur(0.3rem);
   border-radius: 2rem;
   min-height: 80vh;
   width: 60%;
@@ -67,6 +67,12 @@ main {
   padding: 1rem;
 }
 
+h3,
+h2 {
+  font-weight: 600;
+  color: #729ba1c0;
+}
+
 .links {
   display: flex;
   flex-direction: column;
@@ -74,13 +80,16 @@ main {
   height: 50%;
 }
 
-.link {
+.link a {
   display: flex;
+  justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: #729ba1c0;
 }
 
-.link img {
-  padding: 1rem;
+.link a img {
+  padding: 0rem 1rem;
 }
 
 /* Projects Section */
