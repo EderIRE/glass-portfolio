@@ -112,9 +112,13 @@ h3 {
   color: #729ba1c0;
 }
 
-.link a img {
+.link .icon {
   justify-content: center;
-  padding: 0rem 1rem;
+  padding: 0rem 1rem 0rem 0rem;
+}
+
+.git {
+  fill: red;
 }
 
 /* Projects Section */
