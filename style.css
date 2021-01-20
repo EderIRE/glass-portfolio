@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Titillium Web', sans-serif;
+  color: #384b4ec0;
 }
 
 main {
@@ -75,7 +76,10 @@ main {
 
 h3 {
   font-weight: 600;
-  color: #729ba1c0;
+}
+
+h2 {
+  font-size: 0.9rem;
 }
 
 .title h1 {
@@ -84,7 +88,7 @@ h3 {
   color: #729ba1c0;
 }
 
-#line {
+.line {
   margin: auto;
   width: 60%;
 }
@@ -130,11 +134,12 @@ h3 {
   flex: 2;
 }
 
-.title {
+.title h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 3rem;
+  font-weight: 800;
 }
 
 .cards {
@@ -155,14 +160,20 @@ h3 {
   box-shadow: 24px 22px 68px -17px rgba(0, 0, 0, 0.42);
 }
 
-.card img {
-  width: 20%;
-  height: 80%;
-  border-radius: 1rem;
+.card a {
+  text-align: center;
+  width: 40%;
 }
 
-.card p {
+.card .content {
   padding: 1rem;
+  width: 60%;
+}
+
+.card .banner {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
 }
 
 @media only screen and (max-width: 1024px) {
