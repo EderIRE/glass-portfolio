@@ -198,7 +198,8 @@ h2 {
   }
 
   .links {
-    width: 100%;
+    padding: 1rem 0rem 1rem 0rem;
+    width: 80%;
     height: auto;
   }
 
