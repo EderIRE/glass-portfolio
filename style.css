@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 main {
   min-height: 100vh;
-  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  background: linear-gradient(to right top, #297fb9b6, #6dd5fa);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,8 +28,12 @@ main {
 
 .circle1,
 .circle2 {
-  background: white;
-  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+  background: rgba(255, 255, 255, 0.692);
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.664),
+    rgba(255, 255, 255, 0.171)
+  );
   height: 15rem;
   width: 15rem;
   position: absolute;
@@ -61,10 +66,11 @@ main {
 }
 
 .user img {
-  width: 40%;
-  height: 60%;
-  border-radius: 4rem;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   padding: 1rem;
+  filter: drop-shadow(0 0 0.75rem rgba(27, 17, 19, 0.3));
 }
 
 h3,
@@ -80,6 +86,14 @@ h2 {
   height: 50%;
 }
 
+.link {
+  display: flex;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+  padding: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 24px 22px 68px -17px rgba(19, 18, 18, 0.8);
+}
+
 .link a {
   display: flex;
   justify-content: center;
@@ -89,6 +103,7 @@ h2 {
 }
 
 .link a img {
+  justify-content: center;
   padding: 0rem 1rem;
 }
 
@@ -136,27 +151,36 @@ h2 {
   padding: 1rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   .glass {
-    width: 90%;
+    width: 98%;
     display: grid;
+    justify-items: center;
+
     grid-template-areas:
       'dash'
       'temp';
   }
   .dashboard {
+    margin-top: 2%;
+    width: 95%;
     grid-area: dash;
+    flex-wrap: wrap;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     box-shadow: 24px 22px 68px -17px rgba(0, 0, 0, 0.42);
   }
 
-  .user {
-    justify-content: center;
+  .links {
+    width: 100%;
+    height: auto;
   }
 
   .link {
-    justify-content: center;
+    justify-content: start;
+    margin: 1%;
+    border-radius: 2rem;
   }
 
   .link a img {
