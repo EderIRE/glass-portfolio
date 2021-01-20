@@ -27,6 +27,13 @@ main {
   box-shadow: 24px 22px 68px -17px rgba(0, 0, 0, 0.42);
 }
 
+#switchBtn {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  outline: none;
+}
+
 .circle1,
 .circle2 {
   background: rgba(255, 255, 255, 0.692);
@@ -66,12 +73,16 @@ main {
   box-shadow: 24px 22px 68px -17px rgba(170, 119, 119, 0.1);
 }
 
-.user img {
+.picDark {
   width: 150px;
   height: 150px;
   border-radius: 50%;
   padding: 1rem;
-  filter: drop-shadow(0 0 0.75rem rgba(27, 17, 19, 0.3));
+  filter: drop-shadow(0 0 0.75rem rgba(85, 73, 75, 0.603));
+}
+
+.darkMode {
+  filter: invert(1) hue-rotate(180deg);
 }
 
 h3 {
@@ -79,6 +90,7 @@ h3 {
 }
 
 h2 {
+  padding: 0rem 0rem 1rem 0rem;
   font-size: 0.9rem;
 }
 
@@ -186,6 +198,7 @@ h2 {
       'dash'
       'temp';
   }
+
   .dashboard {
     margin-top: 2%;
     width: 95%;
@@ -195,6 +208,10 @@ h2 {
     justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     box-shadow: 24px 22px 68px -17px rgba(0, 0, 0, 0.42);
+  }
+
+  #switchBtn {
+    margin-top: 1rem;
   }
 
   .links {
