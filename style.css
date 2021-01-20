@@ -73,10 +73,20 @@ main {
   filter: drop-shadow(0 0 0.75rem rgba(27, 17, 19, 0.3));
 }
 
-h3,
-h2 {
+h3 {
   font-weight: 600;
   color: #729ba1c0;
+}
+
+.title h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #729ba1c0;
+}
+
+#line {
+  margin: auto;
+  width: 60%;
 }
 
 .links {
