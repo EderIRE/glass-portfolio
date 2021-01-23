@@ -37,10 +37,10 @@ main {
 
 .circle1,
 .circle2 {
-  background: rgba(255, 255, 255, 0.692);
+  background: rgba(255, 255, 255, 0.349);
   background: linear-gradient(
     to right bottom,
-    rgba(255, 255, 255, 0.664),
+    rgba(255, 255, 255, 0.349),
     rgba(255, 255, 255, 0.171)
   );
   height: 15rem;
@@ -154,6 +154,7 @@ h2 {
   align-items: center;
   padding: 3rem;
   font-weight: 800;
+  color: #2c383ac0;
 }
 
 .cards {
@@ -172,6 +173,11 @@ h2 {
   margin: 1rem;
   border-radius: 2rem;
   box-shadow: 24px 22px 68px -17px rgba(0, 0, 0, 0.42);
+  transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .card a {
